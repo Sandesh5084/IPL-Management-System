@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Web Portal</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+{
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color:orange;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: orange;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: orange;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: purple;
+    color: dark blue;
+}
+#home {
+    width: 43px;
+    height: 44px;
+    background: url(home.gif) 0px 0px;
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+
+<style>
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: blue;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color:lightgreen}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+</head>
+<body>
+<ul>
+  
+   <li class="dropdown">
+
+    <a href="javascript:void(0)" class="dropbtn">INFO</a>
+    <div class="dropdown-content">
+<a href=view.php>PLAYER</a>
+      <a href="viewmatch.php">MATCHES</a>
+      <a href="viewteams.php">TEAMS</a>
+      <a href="viewstats.php">STATISTICS</a>
+    </div>
+  </li>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">PLAYER</a>
+    <div class="dropdown-content">
+      <a href="searchform.php">STATISTICS</a>
+      
+    </div>
+  </li>
+<li><a href="fixtures.php">SCHEDULE</a></li>
+
+
+<li><a href="demo.php">POINTS TABLE</a></li>
+
+<li><a href="toprs.php">TOP HITTERS</a></li>
+
+<li><a href="searchvenues.php">SEARCH MATCH</a></li>
+
+<li><a href="index.php">ADMIN LOGIN</a></li>
+
+
+
+
+</ul>
+
+<marquee direction="left" behavior="slide" style="border:solid" bgcolor="orange"><font size=6>GET THE LATEST UPDATES OF THE GREAT INDIAN PREMIER LEAGUE...!!!</font></marquee>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.iplt20.com/">
+      <img src="n1.jpeg" alt="IPL FANTASY LEAGUE 2019" width="300" height="200">
+    </a>
+    <div class="desc">INDIAN PREMIER LEAGUE</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.royalchallengers.com/">
+      <img src="n1.jpeg" alt="IPL FANTASY LEAGUE 2019" width="300" height="200">
+    </a>
+    <div class="desc">ROYAL CHALLENGERS BANGLORE</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="http://www.sunrisershyderabad.in/">
+      <img src="n1.jpeg" alt="IPL FANTASY LEAGUE 2019" width="300" height="200">
+    </a>
+    <div class="desc">SUN RISERS HYDERABAD</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="http://www.mumbaiindians.com/">
+      <img src="n1.jpeg" alt="IPL FANTASY LEAGUE 2019" width="300" height="200">
+    </a>
+    <div class="desc">MUMBAI INDIANS</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.chennaisuperkings.com/CSK_WEB/index.html">
+      <img src="n1.jpeg" alt="IPL FANTASY LEAGUE 2019" width="300" height="200">
+    </a>
+    <div class="desc">CHENNAI SUPERKINGS</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.rajasthanroyals.com/">
+      <img src="n1.jpeg" alt="IPL FANTASY LEAGUE 2019" width="300" height="200">
+    </a>
+    <div class="desc">RAJASTHAN ROYALS</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="http://www.kkr.in/">
+      <img src="n1.jpeg" alt="IPL FANTASY LEAGUE 2019" width="300" height="200">
+    </a>
+    <div class="desc">KOLKATA KNIGHT RIDERS</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.delhidaredevils.com/">
+      <img src="n1.jpeg" alt="IPL FANTASY LEAGUE 2019" width="300" height="200">
+    </a>
+    <div class="desc">DELHI DAREDEVILS</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.kxip.in/">
+      <img src="n1.jpeg" alt="IPL FANTASY LEAGUE 2019" width="300" height="200">
+    </a>
+    <div class="desc">KINGS XI PUNJAB</div>
+  </div>
+</div>
+
+</body>
+</html>
